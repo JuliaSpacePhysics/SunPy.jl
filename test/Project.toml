@@ -1,3 +1,5 @@
 [deps]
 Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+SunPy = "d53ba2b8-6a4a-4633-896a-a050af4da271"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
