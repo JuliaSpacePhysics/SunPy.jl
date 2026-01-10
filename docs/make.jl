@@ -9,6 +9,7 @@ makedocs(;
     sitename = "SunPy.jl",
     format = Documenter.HTML(;
         canonical = "https://JuliaSpacePhysics.github.io/SunPy.jl",
+        size_threshold = nothing
     ),
     pages = [
         "Home" => "index.md",

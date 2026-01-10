@@ -15,7 +15,7 @@ Modules = [SunPy]
 
 ## Quickstart
 
-using the `Fido` interface to obtain solar data. 
+Using the [`Fido`](https://docs.sunpy.org/en/stable/generated/api/sunpy.net.Fido.html) interface (a unified data search and retrieval tool) to obtain solar data. 
 
 ```@example sunpy
 using SunPy, PythonCall
@@ -24,7 +24,9 @@ Fido
 Fido.search(a.Time("2012/3/4", "2012/3/6"), a.Instrument.lyra, a.Level.two)
 ```
 
-https://docs.sunpy.org/en/stable/tutorial/maps.html
+`Map` object in sunpy.
+
+<!-- https://docs.sunpy.org/en/stable/tutorial/maps.html -->
 
 ```@example sunpy
 pyimport("sunpy.data.sample")
