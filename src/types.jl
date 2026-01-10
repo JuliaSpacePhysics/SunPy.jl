@@ -12,3 +12,17 @@ PythonCall.Py(mod::PythonModule) = getfield(mod, :mod)
     name in m.autoimports && return pyimport("$(py.__name__).$name")
     return getproperty(py, name)
 end
+
+struct Map{T, N, A <: AbstractArray{T, N}} <: AbstractArray{T, N}
+    py::Py
+    data::A
+end
+
+Base.size(m::Map) = Base.size(m.data)
+Base.getindex(m::Map, args...) = Base.getindex(m.data, args...)
+Base.show(io::IO, m::MIME"text/plain", map::Map) = Base.show(io, m, map.py)
+
+function Map(path)
+    py = sunpy.map.Map(path)
+    return Map(py, PyArray(py.data; copy = false))
+end

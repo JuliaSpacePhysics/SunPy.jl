@@ -1,7 +1,13 @@
 using SunPy
 using Documenter
+using PythonCall
 
-DocMeta.setdocmeta!(SunPy, :DocTestSetup, :(using SunPy); recursive = true)
+DocMeta.setdocmeta!(SunPy, :DocTestSetup, :(using SunPy))
+
+# Download data first to render the documentation
+# Without `sunpy.data.sample.AIA_171_IMAGE` the CI stuck
+pyimport("sunpy.data.sample")
+sunpy.data.sample.AIA_171_IMAGE
 
 makedocs(;
     modules = [SunPy],
