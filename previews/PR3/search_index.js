@@ -1,3 +1,3 @@
 var documenterSearchIndex = {"docs":
-[{"location":"#SunPy","page":"Home","title":"SunPy","text":"Documentation for SunPy.\n\n","category":"section"}]
+[{"location":"#SunPy","page":"Home","title":"SunPy","text":"Documentation for SunPy.\n\n","category":"section"},{"location":"#Acquiring-Data","page":"Home","title":"Acquiring Data","text":"Obtaining solar data using the Fido interface (a unified data search and retrieval tool). \n\nusing SunPy, PythonCall\n@py import sunpy.net: Fido, attrs as a\nFido\nFido.search(a.Time(\"2012/3/4\", \"2012/3/6\"), a.Instrument.lyra, a.Level.two)","category":"section"}]
 }
