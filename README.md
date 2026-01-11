@@ -9,3 +9,9 @@ A Julia wrapper around [SunPy](https://github.com/sunpy/sunpy)
 **Installation**: at the Julia REPL, run `using Pkg; Pkg.add("https://github.com/JuliaSpacePhysics/SunPy.jl")`
 
 **Documentation**: [![Dev](https://img.shields.io/badge/docs-dev-blue.svg?logo=julia)](https://JuliaSpacePhysics.github.io/SunPy.jl/dev/)
+
+
+## Features and Roadmap
+
+- [x] Map Contouring
+- [ ] Integration with [WCS.jl](https://juliaastro.org/WCS/stable/)

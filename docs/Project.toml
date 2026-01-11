@@ -1,5 +1,6 @@
 [deps]
 Chairmarks = "0ca39b1e-fe0b-4e98-acfc-b1656634c4de"
+Contour = "d38c429a-6771-53c6-b99e-75d170b6e991"
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 SunPy = "d53ba2b8-6a4a-4633-896a-a050af4da271"

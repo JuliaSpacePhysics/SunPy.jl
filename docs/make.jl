@@ -24,6 +24,7 @@ makedocs(;
         ],
         "Example Gallery" => [
             "gallery/brightness_pixel_location.md",
+            "gallery/map_contouring.md",
         ],
     ],
 )

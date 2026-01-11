@@ -7,6 +7,7 @@ using OffsetArrays: Origin
 export sunpy
 
 include("types.jl")
+include("methods.jl")
 
 const sunpy = PythonModule(PythonCall.pynew(), (:data, :map, :net, :visualization))
 const astropy = PythonModule(PythonCall.pynew())
