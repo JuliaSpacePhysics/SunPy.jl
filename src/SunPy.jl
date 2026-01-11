@@ -1,6 +1,8 @@
 module SunPy
 
 using PythonCall
+using OffsetArrays
+using OffsetArrays: Origin
 
 export sunpy
 
