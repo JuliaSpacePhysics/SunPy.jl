@@ -22,6 +22,9 @@ makedocs(;
         "Tutorials" => [
             "Coordinates" => "tutorials/coordinates.md",
         ],
+        "Example Gallery" => [
+            "gallery/brightness_pixel_location.md",
+        ],
     ],
 )
 

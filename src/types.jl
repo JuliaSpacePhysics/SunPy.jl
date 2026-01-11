@@ -18,11 +18,18 @@ struct Map{T, N, A <: AbstractArray{T, N}} <: AbstractArray{T, N}
     data::A
 end
 
-Base.size(m::Map) = Base.size(m.data)
+for f in (:size, :axes)
+    @eval Base.$f(m::Map) = Base.$f(m.data)
+end
+
 Base.getindex(m::Map, args...) = Base.getindex(m.data, args...)
 Base.show(io::IO, m::MIME"text/plain", map::Map) = Base.show(io, m, map.py)
 
 function Map(path)
-    py = sunpy.map.Map(path)
-    return Map(py, PyArray(py.data; copy = false))
+    py = (@pyconst sunpy.map.Map)(path)
+    pyarr = PyArray(@py py.data; copy = false)
+    return Map(py, Origin(0)(pyarr))
 end
+
+@inline Base.getproperty(m::Map, s::Symbol) =
+    s in fieldnames(Map) ? getfield(m, s) : getproperty(m.py, s)
