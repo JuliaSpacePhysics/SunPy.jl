@@ -33,5 +33,5 @@ using Chairmarks
 @py import numpy as np
 
 @b sunpy.map.Map(AIA_171_IMAGE) @py(np.argwhere(_.data == _.data.max()))
-@b Map(AIA_171_IMAGE) argmax(_)
+@b Map(AIA_171_IMAGE) argmax(_')
 ```

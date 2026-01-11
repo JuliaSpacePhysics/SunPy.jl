@@ -2,7 +2,7 @@
 
 This section of the guide introduces how coordinates are represented in sunpy.
 
-Corresponding sunpy tutorial: https://docs.sunpy.org/en/stable/tutorial/coordinates.html#
+Reference: corresponding [sunpy webpage](https://docs.sunpy.org/en/stable/generated/gallery/coordinates/coordinates.html).
 
 ```@example sunpy
 using SunPy
@@ -13,7 +13,7 @@ using PythonCall
 ```
 
 ```@example sunpy
-@py coord = SkyCoord(70*u.deg, -30*u.deg, obstime="2017-08-01",
+coord = SkyCoord(70*u.deg, -30*u.deg, obstime="2017-08-01",
                  frame=frames.HeliographicStonyhurst)
 ```
 

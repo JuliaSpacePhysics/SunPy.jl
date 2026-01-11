@@ -7,10 +7,12 @@ authors = ["Beforerr <zzj956959688@gmail.com> and contributors"]
 projects = ["test", "docs"]
 
 [deps]
+Contour = "d38c429a-6771-53c6-b99e-75d170b6e991"
 OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 
 [compat]
+Contour = "0.6"
 OffsetArrays = "1"
 PythonCall = "0.9"
 julia = "1.10"
