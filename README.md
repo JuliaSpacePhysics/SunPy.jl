@@ -13,5 +13,6 @@ A Julia wrapper around [SunPy](https://github.com/sunpy/sunpy)
 
 ## Features and Roadmap
 
+- [x] Auto-import of `sunpy` submodules
 - [x] Map Contouring
 - [ ] Integration with [WCS.jl](https://juliaastro.org/WCS/stable/)

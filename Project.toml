@@ -1,6 +1,6 @@
 name = "SunPy"
 uuid = "d53ba2b8-6a4a-4633-896a-a050af4da271"
-version = "1.0.0-DEV"
+version = "0.1.0"
 authors = ["Beforerr <zzj956959688@gmail.com> and contributors"]
 
 [workspace]
